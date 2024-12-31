@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Gabarito } from "next/font/google";
 import Header from "./components/header";
+import Articles from "./components/articles";
 
 const gabarito = Gabarito({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function Home() {
         >
           Articles
         </motion.p>
+        <Articles />
       </div>
     </main>
   );
