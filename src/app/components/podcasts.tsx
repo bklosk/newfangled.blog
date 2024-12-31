@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function Articles() {
+export default function Podcasts() {
   const squares = [];
 
   for (let i = 0; i < 5; i++) {
@@ -29,9 +29,8 @@ export default function Articles() {
           className="text-3xl ml-4 mt-4"
         >
           {" "}
-          Lorem ipsum, placeholder text. Article {i + 1}
+          Youtube link for podcast {i + 1}
         </motion.h3>
-        <h3 className="text-2xl absolute bottom-6 left-4">Ben</h3>
       </motion.div>
     );
   }
@@ -40,12 +39,6 @@ export default function Articles() {
     <Link key={"more"} href="/articles">
       <motion.div
         whileHover={{ scale: 0.95 }}
-        initial={{ opacity: 0, y: 40 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: { delay: 0 + 6 * 0.4, ease: "easeInOut", duration: 0.3 },
-        }}
         key={6}
         className="w-72 h-72 relative"
       >
@@ -53,7 +46,7 @@ export default function Articles() {
           whileHover={{ textDecoration: "underline" }}
           className="absolute bottom-2 right-2"
         >
-          ...more articles
+          ...more pods
         </motion.h3>
       </motion.div>
     </Link>
