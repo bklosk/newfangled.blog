@@ -55,7 +55,7 @@ export default function Articles() {
       >
         <motion.h3
           whileHover={{ textDecoration: "underline" }}
-          className="absolute bottom-2 right-2"
+          className="absolute text-2xl bottom-2 right-2"
         >
           ...more articles
         </motion.h3>
